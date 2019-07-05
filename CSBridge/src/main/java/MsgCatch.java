@@ -21,7 +21,7 @@ public class MsgCatch {
        ConnectionFactory factory = new ConnectionFactory();
 
        //attempt recovery every 5 sec
-       factory.setNetworkRecoveryInterval(1000);
+       //factory.setNetworkRecoveryInterval(1000);
 
        factory.setHost("192.168.100.30");
        factory.setPort(9501);
