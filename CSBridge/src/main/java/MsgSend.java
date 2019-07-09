@@ -29,14 +29,20 @@ public class MsgSend {
         //setting
         ConnectionFactory factory = new ConnectionFactory();
 
+
+        fileReader textread = new fileReader();
+
+        String[] saveLine = textread.readfiles();
+
         //attempt recovery every 5 sec
         factory.setNetworkRecoveryInterval(1000);
 
-        factory.setHost("192.168.100.30");
-        factory.setPort(9501);
-        factory.setVirtualHost("/wrapsody-oracle");
-        factory.setUsername("wrapsody");
-        factory.setPassword("Wrapsody.1");
+
+        factory.setHost(saveLine[0]);
+        factory.setPort(Integer.parseInt(saveLine[1]));
+        factory.setVirtualHost(saveLine[2]);
+        factory.setUsername(saveLine[3]);
+        factory.setPassword(saveLine[4]);
 
         factory.setAutomaticRecoveryEnabled(true);
 

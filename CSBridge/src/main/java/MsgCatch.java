@@ -7,7 +7,7 @@ import org.json.simple.parser.ParseException;
 
 
 import java.io.IOException;
-import java.sql.Time;
+
 import java.util.concurrent.TimeoutException;
 
 import static com.sun.javafx.util.Utils.split;
@@ -34,18 +34,20 @@ public class MsgCatch {
         //setting
         ConnectionFactory factory = new ConnectionFactory();
 
-        //attempt recovery every 5 sec
-        factory.setNetworkRecoveryInterval(1000);
-
-        factory.setHost("192.168.100.30");
-        factory.setPort(9501);
-        factory.setVirtualHost("/wrapsody-oracle");
-        factory.setUsername("wrapsody");
-        factory.setPassword("Wrapsody.1");
-
-        factory.setAutomaticRecoveryEnabled(true);
 
         //For repost
+        fileReader textread = new fileReader();
+
+        String[] saveLine = textread.readfiles();
+        factory.setNetworkRecoveryInterval(1000);
+
+        factory.setHost(saveLine[0]);
+        factory.setPort(Integer.parseInt(saveLine[1]));
+        factory.setVirtualHost(saveLine[2]);
+        factory.setUsername(saveLine[3]);
+        factory.setPassword(saveLine[4]);
+
+        factory.setAutomaticRecoveryEnabled(true);
 
         //RECEIVING
         final Connection connection2 = factory.newConnection();
@@ -153,7 +155,18 @@ public class MsgCatch {
 
                                     MsgSend.pubMsg(newJson,1);          // 문서를열람하고싶으시다면.... 답변.
                                 }else{
-                                    System.out.println("you are here ass");
+                                    String newBody = cs.processInput("null2");
+                                    createJSON newJSON = new createJSON();
+                                    JSONObject finalJSON = newJSON.createJOBJECT(jObj,jObj2);
+                                    eventConID = finalJSON.get("recvConvoId").toString();
+
+                                    System.out.println("new convoID : " + finalJSON.get("recvConvoId"));
+
+                                    finalJSON.put("body",newBody);
+
+                                    String newJson = finalJSON.toString();
+
+                                    MsgSend.pubMsg(newJson,1);          // 문서를열람하고싶으시다면.... 답변.
                                 }
                             }catch(TimeoutException e){
                                 //.setStackTrace();

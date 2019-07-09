@@ -5,7 +5,6 @@ public class createJSON {
 
     public static JSONObject createJOBJECT(JSONObject jj, JSONObject jjPayload){
         /*
-
         {
             "createdAt":1562574809315,
             "updatedAt":1562574809315,
@@ -16,7 +15,6 @@ public class createJSON {
             "messageType":0,
             "isNotice":false
          }
-
          */
         //{"type":"BOT_REOPEN","payload":{"convoId":"ef43070691e044bdb6faf4bfdb840ad5","locale":"en-US","userId":"kth"},"createdAt":1562575428883}
 
