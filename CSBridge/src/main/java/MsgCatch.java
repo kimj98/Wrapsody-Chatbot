@@ -1,5 +1,6 @@
 import com.rabbitmq.client.*;
 
+import javafx.geometry.Pos;
 import org.json.simple.*;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -37,16 +38,13 @@ public class MsgCatch {
 
         //For repost
         fileReader textread = new fileReader();
-
         String[] saveLine = textread.readfiles();
         factory.setNetworkRecoveryInterval(1000);
-
         factory.setHost(saveLine[0]);
         factory.setPort(Integer.parseInt(saveLine[1]));
         factory.setVirtualHost(saveLine[2]);
         factory.setUsername(saveLine[3]);
         factory.setPassword(saveLine[4]);
-
         factory.setAutomaticRecoveryEnabled(true);
 
         //RECEIVING
@@ -75,12 +73,10 @@ public class MsgCatch {
 
                         System.out.println("before if 0 : "+ exCheck[0]);
 
+                        // event 케이스가 아닐때.
                         if(!(exCheck[0].equals("event"))){
 
                             String msg = new String(body,"UTF-8");
-
-                            //Debug : check the Received Message
-                            //System.out.println("you got "+ msg);
 
                             /*
                                Use the JSON Parser class to parsing the json type input.
@@ -88,20 +84,35 @@ public class MsgCatch {
                             */
                             JSONParser parser = new JSONParser();
                             String question = cs.myJsonParser(msg);
+
+                            //Send the POS filter to pos tagging.
                             String PosMsg = PosFilter.filtering(question);
 
                             try{
                                 JSONObject jObj = (JSONObject) parser.parse(msg); // {"senduser":"kth" ......}
 
+                                // this if statement prevent to read the bot's respond msg.
                                 if(!( "@BOT@chatscript".equals((String)jObj.get("sendUserId")))){
                                     jObj.put("sendUserId","@BOT@chatscript");
-                                    jObj.put("body",cs.processInput(PosMsg));
+
+                                    /*
+                                       make the CheckType object to get the question without the numbers
+                                       get numbers for get the type number of the attachment
+                                                       get button number of the attachment
+                                                       and get the name of the image if it has.
+                                   */
+                                    CheckType checkType = new CheckType(cs.processInput(PosMsg));
+                                    int typeNum = checkType.getTypeNum();
+                                    int btnNum = checkType.getBtnNum();
+                                    String imgName = checkType.getImgName();
+
+                                    jObj.put("body",checkType.getAnswer());
                                     convoID = (String)jObj.get("recvConvoId");
-                                    System.out.println("new convoID : " + convoID);
+                                    if(typeNum<6) {
+                                        attachJSON.jsonAttach(jObj, typeNum, btnNum, imgName);
+                                    }
+                                    //System.out.println("TypeNumber is : " + convoID);
                                     String newJson = jObj.toString();
-                                    String newJson2 = jObj.toJSONString();
-                                    System.out.println(newJson);
-                                    System.out.println(newJson2);
 
                                     MsgSend.pubMsg(newJson,0);          // 문서를열람하고싶으시다면.... 답변.
                                 }else{

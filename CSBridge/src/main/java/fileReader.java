@@ -1,6 +1,8 @@
 /*
     Copyright by Jaemoon Seok.
  */
+import com.rabbitmq.client.ConnectionFactory;
+
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;

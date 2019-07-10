@@ -36,14 +36,11 @@ public class MsgSend {
 
         //attempt recovery every 5 sec
         factory.setNetworkRecoveryInterval(1000);
-
-
         factory.setHost(saveLine[0]);
         factory.setPort(Integer.parseInt(saveLine[1]));
         factory.setVirtualHost(saveLine[2]);
         factory.setUsername(saveLine[3]);
         factory.setPassword(saveLine[4]);
-
         factory.setAutomaticRecoveryEnabled(true);
 
         Connection connection = factory.newConnection();

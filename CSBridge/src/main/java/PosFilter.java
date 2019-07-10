@@ -7,7 +7,7 @@ public class PosFilter {
     public static String filtering(String text) {
         Seq<KoreanTokenizer.KoreanToken> tokenss = OpenKoreanTextProcessorJava.tokenize(text);
         String newTokens = tokenss.mkString(" ");
-        System.out.println(newTokens+ " is original");
+        //System.out.println(newTokens+ " is original");
 
         String resultToken = ""; // 여기에 저장해서 return 할거야
         //initPos & checkPos = Substring 하기위한 index num 구하는 variables
