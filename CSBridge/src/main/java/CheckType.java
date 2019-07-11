@@ -1,5 +1,4 @@
 
-
 public class CheckType {
 
     /*
@@ -8,14 +7,15 @@ public class CheckType {
      - private int btnNum : assign the button number of the attachment.
      - private int attachFlag : assign 1 or 0 to figure out attachment require or not.
      - private String photoNum : assign the name of the .png file
+     - private String tags     : assign the last sentence from the script ( type number etc..)
+
      */
     private int typeNum;
     private String answer="";
     private int btnNum;
     private int attachFlag;
-    private String phtNum;
+    private String fileName;
     private String tags;
-    private int taglength;
 
     /*
         TODO:
@@ -38,15 +38,18 @@ public class CheckType {
         return answer;
     }
     public int getTypeNum(){
-
         typeNum = Integer.parseInt(tagger(tags,1));
         return typeNum;
     }
     public int getBtnNum(){
+        btnNum = Integer.parseInt(tagger(tags,2));
+        System.out.println("button number : "+ btnNum);
         return btnNum;
     }
-    public String getImgName(){
-        return phtNum;
+    public String getFileName(){
+        fileName = tagger(tags,4);
+        System.out.println("filename is : "+ fileName);
+        return fileName;
     }
     public String tagger(String input, int flag) {
         String extract = "";

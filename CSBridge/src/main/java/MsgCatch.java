@@ -108,14 +108,14 @@ public class MsgCatch {
                                     int typeNum = checkType.getTypeNum();
                                     System.out.println("Debug3: after checktype use");
                                     int btnNum = checkType.getBtnNum();
-                                    String imgName = checkType.getImgName();
+                                    String fileName = checkType.getFileName();
 
 
                                     jObj.put("body",checkType.getAnswer());
                                     System.out.println("After get answer from the Checktype");
                                     convoID = (String)jObj.get("recvConvoId");
                                     if(typeNum<6) {
-                                        attachJSON.jsonAttach(jObj, typeNum, btnNum, imgName);
+                                        attachJSON.jsonAttach(jObj, typeNum, btnNum, fileName);
                                     }
                                     //System.out.println("TypeNumber is : " + convoID);
                                     String newJson = jObj.toString();

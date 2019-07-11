@@ -14,7 +14,7 @@ public class attachJSON {
            -> String imgName  : this variable has the name of the img file. if the name is 0 then there is no
                                 img required.
     */
-    public static void jsonAttach(JSONObject jobj, int typeNum, int btnNum, String imgName){
+    public static void jsonAttach(JSONObject jobj, int typeNum, int btnNum, String fileName){
 
         JSONObject dummy = new JSONObject();
 
@@ -72,7 +72,8 @@ public class attachJSON {
             */
             System.out.println("here type number 5");
             dummy.put("attachmentType",typeNum);
-            dummy.put("uri","/bot/wrapsody/"+imgName+".png");
+            
+            dummy.put("uri","/bot/wrapsody/"+fileName);
 
             // put dummy object into json array "arr"
             arr.add(dummy);
