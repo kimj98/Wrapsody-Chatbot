@@ -72,7 +72,7 @@ public class attachJSON {
             */
             System.out.println("here type number 5");
             dummy.put("attachmentType",typeNum);
-            
+
             dummy.put("uri","/bot/wrapsody/"+fileName);
 
             // put dummy object into json array "arr"
