@@ -38,7 +38,6 @@ public class attachJSON {
 
             while(i<btnNum){
                 JSONObject payloadDummy = new JSONObject();
-
                 payloadDummy.put("value",valueArr[i]);
                 payloadDummy.put("text",valueArr[i]);
                 payloadDummy.put("type","button");
@@ -70,7 +69,7 @@ public class attachJSON {
             }
             ]
             */
-            System.out.println("here type number 5");
+            System.out.println("here type number ");
             dummy.put("attachmentType",typeNum);
 
             dummy.put("uri","/bot/wrapsody/"+fileName);

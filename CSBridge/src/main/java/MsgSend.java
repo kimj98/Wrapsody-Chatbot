@@ -23,6 +23,9 @@ public class MsgSend {
     private static final String Q_NAME = "bot-chatscript";
     private static final String R_Key = "#.user.@BOT@chatscript";
 
+    /*
+      int flag = check the bot's publish or user's publish.
+     */
     public static void pubMsg(String text,int flag) throws IOException, TimeoutException {
         //connect with the rabbitMQ
 

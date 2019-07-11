@@ -16,6 +16,7 @@ public class CheckType {
     private int attachFlag;
     private String fileName;
     private String tags;
+    private String[] buttonTxt;
 
     /*
         TODO:
@@ -33,6 +34,11 @@ public class CheckType {
         }
     }
 
+    public String[] getButtonTxt(){
+
+
+        return buttonTxt;
+    }
     public String getAnswer(){
 
         return answer;
