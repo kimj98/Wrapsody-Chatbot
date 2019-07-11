@@ -26,8 +26,11 @@ public class attachJSON {
                    -dummy ( attachments)
                      -payloadDummy ( attachment payload )
          */
-        //Button required Case
-        if(typeNum==5){
+
+        //Button & img case
+        if(typeNum==5 && typeNum == 1){
+
+        }else if (typeNum==5){//Button only
 
             int i = 0;
             dummy.put("attachmentType",typeNum);
@@ -51,7 +54,9 @@ public class attachJSON {
             jobj.put("attachments",arr);
 
         }else{
-            //type 0~4 case.
+
+            // file only case.(no button) //
+
             // 7/10 -> image handle case test.
             /*[]표시는 optional.
             "attachments"

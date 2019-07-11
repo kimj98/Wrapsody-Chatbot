@@ -5,18 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="a0eab399-5c0b-4da3-8254-77fe876a20f1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/CheckType.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/attachJSON.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MsgCatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MsgCatch.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MsgSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/MsgSend.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/PosFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/PosFilter.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/fileReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/fileReader.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MsgCatch$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MsgCatch$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MsgCatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MsgCatch.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MsgSend.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/MsgSend.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PosFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/PosFilter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/fileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/attachJSON.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/attachJSON.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -55,8 +44,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/MsgCatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="213">
-              <caret line="103" column="71" selection-start-line="103" selection-start-column="62" selection-end-line="103" selection-end-column="71" />
+            <state relative-caret-position="740">
+              <caret line="170" column="64" lean-forward="true" selection-start-line="170" selection-start-column="64" selection-end-line="170" selection-end-column="64" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -64,10 +53,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/CheckType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="64">
+            <state relative-caret-position="268">
               <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
               <folding>
                 <element signature="e#713#714#0" expanded="true" />
@@ -99,7 +88,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/createJSON.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="85">
+            <state relative-caret-position="238">
               <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -108,11 +97,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/attachJSON.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-221">
-              <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
+            <state relative-caret-position="878">
+              <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
             </state>
           </provider>
         </entry>
@@ -132,7 +121,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/chatscript.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="510">
+            <state relative-caret-position="612">
               <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -190,7 +179,7 @@
       </MavenImportingSettings>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="1">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="170" />
     <option name="y" value="30" />
     <option name="width" value="1698" />
@@ -293,10 +282,10 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="136" y="24" width="1358" height="806" extended-state="1" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.14791988" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.0704698" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -305,7 +294,7 @@
       <window_info id="Favorites" order="6" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.27488855" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.26241136" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39858156" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -379,10 +368,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/chatscript.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/PosFilter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
+        <state relative-caret-position="153">
+          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -399,10 +388,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PosFilter.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/MsgCatch.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="740">
+          <caret line="170" column="64" lean-forward="true" selection-start-line="170" selection-start-column="64" selection-end-line="170" selection-end-column="64" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -420,20 +409,27 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/createJSON.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/attachJSON.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
+        <state relative-caret-position="878">
+          <caret line="80" lean-forward="true" selection-start-line="80" selection-end-line="80" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/chatscript.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="75" column="30" selection-start-line="75" selection-start-column="30" selection-end-line="75" selection-end-column="30" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/MsgCatch.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/createJSON.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="213">
-          <caret line="103" column="71" selection-start-line="103" selection-start-column="62" selection-end-line="103" selection-end-column="71" />
+        <state relative-caret-position="238">
+          <caret line="14" column="28" lean-forward="true" selection-start-line="14" selection-start-column="28" selection-end-line="14" selection-end-column="28" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -442,7 +438,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/CheckType.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64">
+        <state relative-caret-position="268">
           <caret line="39" lean-forward="true" selection-start-line="39" selection-end-line="39" />
           <folding>
             <element signature="e#713#714#0" expanded="true" />
@@ -454,13 +450,6 @@
             <element signature="e#1826#1827#0" expanded="true" />
             <element signature="e#1855#1856#0" expanded="true" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/attachJSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-221">
-          <caret line="2" column="25" selection-start-line="2" selection-start-column="25" selection-end-line="2" selection-end-column="25" />
         </state>
       </provider>
     </entry>
