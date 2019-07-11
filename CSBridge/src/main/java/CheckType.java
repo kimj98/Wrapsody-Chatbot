@@ -64,4 +64,35 @@ public class CheckType {
     public String getImgName(){
         return phtNum;
     }
+    public String tagger(String input, int flag) {
+        String extract = "";
+        if(flag < 4) {
+            int pivot = 0;
+            for(int i = 0; i < input.length(); i++) {
+                if (input.charAt(i) >= 48 && input.charAt(i) <= 57) {
+                    pivot +=1;
+                    extract = String.valueOf(input.charAt(i));
+                    if(pivot == flag) {
+                        break;
+                    }
+                }
+            }
+        } else {
+            int check = 0;
+            int startpoint = 0;
+            for(int i = 0; i < input.length(); i++) {
+                if(input.charAt(i) == ':') {
+                    check += 1;
+                    startpoint = i;
+                    if(check == 4) {
+                        break;
+                    }
+                }
+            }
+            String filtered = input.substring(startpoint + 1);
+            filtered = filtered.trim();
+            extract = filtered;
+        }
+        return extract;
+    }
 }
