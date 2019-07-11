@@ -87,6 +87,7 @@ public class MsgCatch {
 
                             //Send the POS filter to pos tagging.
                             String PosMsg = PosFilter.filtering(question);
+                            System.out.println("Debug1");
 
                             try{
                                 JSONObject jObj = (JSONObject) parser.parse(msg); // {"senduser":"kth" ......}
@@ -101,12 +102,17 @@ public class MsgCatch {
                                                        get button number of the attachment
                                                        and get the name of the image if it has.
                                    */
+                                    System.out.println("Debug2: bot respond");
                                     CheckType checkType = new CheckType(cs.processInput(PosMsg));
+
                                     int typeNum = checkType.getTypeNum();
+                                    System.out.println("Debug3: after checktype use");
                                     int btnNum = checkType.getBtnNum();
                                     String imgName = checkType.getImgName();
 
+
                                     jObj.put("body",checkType.getAnswer());
+                                    System.out.println("After get answer from the Checktype");
                                     convoID = (String)jObj.get("recvConvoId");
                                     if(typeNum<6) {
                                         attachJSON.jsonAttach(jObj, typeNum, btnNum, imgName);
