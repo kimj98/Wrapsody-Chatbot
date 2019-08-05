@@ -1,0 +1,248 @@
+Topic: ~wrapsodyuse  keep repeat (~greeting_words ~wrapsodyKeywords_en )
+
+#Re_Open Case English
+u:(nul)
+[welcome back!] [Nice to see you again] [oh you still here?]\n
+ 
+#First_Open Case English
+u:(nul)
+Hello! nice to meet you my friend! \n
+
+#((FAQ)) I want to branch an existing document to a new document.
+#((FAQ)) How can I request view permission?
+#((FAQ)) Can I simply send a download link to share a Wrapsody document?
+#((FAQ)) How can I post my comments on a Wrapsody document?
+#((FAQ)) I want to know who used my document.
+#((FAQ)) I want to view one of the previous versions.
+#((FAQ)) I already checked in my document, but I want to revert it.
+#((FAQ)) I want my colleages to check the changes I made on a Wrapsody document.
+
+#((new)) Using Smart Cleaner
+#((new)) Chatting by document
+#((new)) Checking a document timeline
+
+#((notice)) Terms
+#((notice)) Suggest feature
+#((notice)) Report error
+
+u:(Q2)
+Please Check Left FAQ list or Enter new Question!\n
+type:6 btnnum:0 attachflag:0 fileName: a.pptx\n
+
+u:(Q2_kr)
+더 알고싶은게 있으시다면 좌측 FAQ 리스트 확인 및\n
+질문을 새로 입력해 주세요.\n
+type:6 btnnum:0 attachflag:0 fileName: a.pptx\n
+
+u: (Q3)
+You want to change language setting? tell me yes or no\n
+type:6 btnnum:0 attachflag:0 fileName: a.pptx\n
+
+type:1 btnnum:0 attachFlag:1 fileName:13.png\n
+
+u: ( [_~shareCase_en] * [_~shareCase_en] _0!=_1)
+Do you want to know how to send a download link to share a Wrapsody document?\n
+type:1 btnnum:0 attachflag:0 fileName:13.png\n 
+
+u: ([_~commentCase_en] * [_~commentCase_en] _0!=_1)
+Do you want to know how to post a comment on a Wrapsody document?\n
+type:1 btnnum:0 attachflag:0 fileName:14.png\n
+
+u: ([_~permissionConcept_en]  *[_~permissionConcept_en] _0!=_1)
+Do you want to know how to request a permission for a Wrapsody document?\n
+type:1 btnnum:0 attachflag:0 fileName:12.png\n
+
+u:([~coworker] * [check see read] * [document file])
+Do you want your colleagues to read the changes you have made on a Wrapsody document?\n
+type:1 btnnum:0 attachflag:0 fileName:19.png 19-1.png\n
+
+u:([revised "checked in"] * [revert])
+Do you want to know how to revert your document after revision/check-in?\n
+type:1 btnnum:0 attachflag:0 fileName:17.png\n
+
+u:([_~docUpdate_en] * [_~docUpdate_en] _0!=_1)
+Do you want to know how to revert your document after revision/check-in?\n
+type:1 btnnum:0 attachflag:0 fileName:17.png\n
+    
+u: ([_~copyCase_en]*[_~copyCase_en] _0!=_1)  
+Do you want to know how to make a branch of an existing document?\n
+type:1 btnnum:0 attachflag:0 fileName:11.png\n
+
+u: ([_~prevCase_en]*[_~prevCase_en] _0!=_1)
+Do you want to view one of the pervious versions of a Wrapsody document?\n
+type:1 btnnum:0 attachflag:0 fileName:16.png\n
+
+u: ([know who people] * [used opened revised "checked in"] * [document file])
+Do you want to know the people who used your document?\n
+type:1 btnnum:0 attachflag:0 fileName:15.png\n
+
+u:([chatting chat])
+Do you want to know about Document Chatting?\n
+type:1 btnnum:0 attachflag:0 fileName:23.png\n
+
+u:([_~webPreview_en])
+Do you want to know about Web Preview?\n
+type:1 btnnum:0 attachflag:0 fileName:22.png \n
+
+u: ([_~smartCleaner_en])
+You want to know about Smart Cleaner?\n
+type:1 btnnum:0 attachflag:0 fileName:21.png\n
+
+
+u:([check find "how to" how]*[_~timeline])
+Do you want to know how to check the timeline of a document?\n
+type:1 btnnum:0 attachflag:0 fileName:24.png\n
+
+u: (~time_words_en)
+Current Time is : %time ^join(%month/ %date)\n
+type:6 btnnum:2 attachflag:0 imagenumber:00.jpg\n
+
+#exception case for English.
+u:(Q1)
+Can you say again please?\n
+type:6 btnnum:0 attachflag:0 fileName:00\n
+
+u: (meetingroom)
+개발중이니 기다려주세요..\n
+회의실 예약 링크((button/https://sso.fasoo.com/adfs/ls?version=1.0&action=signin&realm=urn%3AAppProxy%3Acom&appRealm=fc65b398-3241-e811-80f3-00155d65fe02&returnUrl=https%3A%2F%2Fluke30.fasoo.com%2F&client-request-id=E7D0B070-396C-0001-A167-D1E76C39D501))\n
+type:5 btnnum:0 attachflag:0 fileName:00\n
+
+u: (comment)
+Do you want to know how to post a comment on a Wrapsody document?\n
+type:1 btnnum:0 attachflag:0 fileName:14.png\n
+
+u: ([share "download link"])
+Do you want to know how to send a download link to share a Wrapsody document?\n
+type:1 btnnum:0 attachflag:0 fileName:13.png\n 
+
+#Terms part.
+
+u: (B1)
+Branch is a copy of a Wrapsody document that a user can revise.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (B2)
+Useage map is a map that shows the current state of document usage among different departments. It can also show usage graph by the each users and deparment.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (B3)
+Used for wrapping documents other than standard office programs.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (B4)
+The process of editing and uploading a Wrapsody document to the server by a user who has a revision permission. The user should select "start revision" to open the document and then select "revision complete" to update the edited file as a most recent version\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (B5)
+Branch Map is a map that shows the relationship between branches of a single Wrapsody document.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ([Branch branch])
+B1\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ([[useage Useage][map Map] "유스에이지" ["유스에이지"]["맵"]])
+B2\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u:([Wrapsody wrapsody] Bridge)
+B3\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ([revise revision])
+B4\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (Branch map)
+B5\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ([tag])
+Used as a classification tool for Wrapsody document and is classified as mandatory, option, and user. The tags can enable multiple selection and structure of hierarchy.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (timeline)
+enables the user to see the history of a certain wrapsody document.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (Create a link)
+It is a link to download a Wrapsody document.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ("Unwrap")
+Unwrap is the process of reverting back the Wrapsody document before Wrapping.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (Send a view alert)
+Send a view alert is to request for a view permission of a Wrapsody document to the users who can revise.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (Engaged)
+inbound is number of views of a particular Wrapsody document starting from revision update.\n
+outbound is number of views of a particular Wrapsody document starting from revision update.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (My drive)
+is a virtual folder in the Wrapsody server that is used to effectively organize Wrapsody documents.\n
+It can be created in a tree structure, and a same document can be stored in more than one folder.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (view)
+A user with a permission can view the Wrapsody document. When user with view or revision permission selects view mode when opeing the document, then the document will be opened in a view mode.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (onwer)
+Owner is the user who has the authorization to send a permission for revision of a Wrapsody Document. The user that first created the Wrapsody Document will be the owner which can be changed later on. When a non-owner user request for an owner request, and the owner accpets it, then the user will become the owner.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+
+u:([term "help"])
+Revise((button/command))\n
+tag((button/command))\n
+branch((button/command))\n
+View((button/command))\n
+Owner((button/command))\n
+Unwrap((button/command))\n
+Send view alert((button/command))\n
+Engaged((button/command))\n
+My drive((button/command))\n
+Useage map((button/command))\n
+Branch Map((button/command))\n
+Wrapsody Bridge((button/command))\n
+Create a Link((button/command))\n
+type:5 btnnum:2 attachflag:0 imagenumber:00.jpg\n
+
+
+u: (document)
+Here is the list of some questions about the documents.\n
+Check this list to find appropriate questions and click it.
+View one of the previous versions of the document?((button/command))\n
+Who used your document?((button/command))\n
+Branch an existing document to a new document((button/command))\n
+Revert your document after revision?((button/command))\n
+type:5 btnnum:2 attachflag:0 imagenumber:00.jpg\n
+
+#Title Concept 
+concept: ~wrapsodyKeywords ( ~time_words ~branch_words ~whoUseCase ~prevCase ~copyCase ~docUpdate ~cowork ~permissionConcept ~shareCase ~commentCase ~newFormat ~smartCleaner ~documentChat ~webPreview ~timeline   )
+
+#인사말 전용 concept
+concept: ~greeting_words ( null null2 nul nul2 Q1 Q2 )
+
+concept: ~wrapsodyKeywords_en (~whoUseCase_en  ~prevCase_en  ~copyCase_en ~docUpdate_en ~cowork_en ~permissionConcept_en ~shareCase_en ~commentCase_en ~newFormat_en )
+
+#Concept Dic
+concept: ~whoUseCase_en (use used revise revised open oepned see saw watch watched update updated work worked document)
+concept: ~prevCase_en ( previous prior earlier older different past before revision document version view)
+concept: ~copyCase_en (duplicate copy branch document duplicated copy)
+concept: ~docUpdate_en(revert change reverted changed "set back" "go back" document revision)
+concept: ~cowork_en( colleague coworker co-worker manager senior teammate check checked see saw read )
+concept: ~permissionConcept_en( request get ask document permission document)
+concept: ~shareCase_en (share link download document shared)
+concept: ~commentCase_en (post comment document)
+concept: ~coworker( colleague colleagues coworker coworkers co-worker co-workers manager managers senior seniors teammate teammates)
+
+#New Feature
+concept: ~smartCleaner_en [ smart cleaner “smart cleaner” sc  delete clean smartcleaner]
+concept: ~documentChat_en ( chat talk conversation chatting  )
+concept: ~webPreview_en( web preview “web preview” “webpreview”  wp peek )
+concept: ~timeline_en (timeline history)

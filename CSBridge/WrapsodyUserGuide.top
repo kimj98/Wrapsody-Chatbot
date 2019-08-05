@@ -1,0 +1,275 @@
+Topic: ~wrapsodyuse  keep repeat (~wrapsodyKeywords presentation ~greeting_words ~wrapsodyKeywords_en )
+#Re_Open Case 
+u:(null)
+[다시 오신 것을 환영합니다] [또 뵙네요][다시 오셔서 기뻐요][안녕하세요]\n	
+
+#First_Open Case
+u:(null2)
+안녕하세요 반가워요 처음뵙겠습니다\n
+
+
+#((FAQ)) 다른 사용자가 관리 중인 문서의 내용을 복사해서 내 문서로 만들고 싶어요.
+#((FAQ)) 열람 권한은 어떻게 요청할 수 있나요?
+#((FAQ)) Wrapsody 문서는 어떻게 공유할 수 있나요?
+#((FAQ)) 문서에 의견을 남기고 싶어요.
+#((FAQ)) 누가 내 문서를 사용했는지 알고 싶어요.
+#((FAQ)) 문서의 이전 버전을 확인하고 싶어요.
+#((FAQ)) 문서를 이미 리비전 완료했는데 이전으로 되돌리고 싶어요.
+#((FAQ)) 내가 수정한 문서를 업무 관련자가 꼭 읽었으면 해요.
+
+#((new)) 스마트 클리너 사용하기
+#((new)) 웹에서 문서 미리 보기
+#((new)) 문서별로 채팅하기
+#((new)) 문서의 타임라인 확인하기
+
+#((notice)) 용어 설명
+#((notice)) 기능 제안
+#((notice)) 장애 접수
+
+
+
+
+u: ("문서 공유 링크")
+문서 공유 링크란 Wrapsody 문서를 다운로드 받을 수 있는 링크. 공유 링크를 전달 받은 사용자는 링크를 클릭하여 해당 Wrapsody 문서에 접근 가능\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+#Preset Sentences
+
+u: (리 비전을 완료했는데 이전으로 되돌리고 싶어요)
+리비전을 이미 완료하셨는데 이전으로 되돌리고 싶으신가요?\n
+type:1 btnnum:0 attachflag:0 fileName:17.png\n
+
+u:(Q2)
+더 알고싶은게 있으시다면 좌측 FAQ 리스트 확인 및\n
+질문을 새로 입력해 주세요.\n
+type:6 btnnum:0 attachflag:0 fileName: a.pptx\n
+
+
+u: ( [_~shareCase] * [_~shareCase] _0!=_1 )
+Wrapsody 문서를 다운 및 공유에 대한것을  알고싶으신가요?\n 
+type:1 btnnum:0 attachFlag:1 fileName:13.png\n
+
+
+u: ([_~commentCase] * [_~commentCase] _0!=_1) 
+문서에 의견을 남기는 방법”에 대해 알고 싶으신가요?\n
+type:1 btnnum:0 attachflag:0 fileName:14.png\n
+
+
+u: ([_~permissionConcept] * [_~permissionConcept] _0!=_1)
+Wrapsody 문서에 대한 권한 요청/부여 에 대하여 알고 싶으신가요?\n 
+type:1 btnnum:0 attachflag:0 fileName:12.png\n
+
+
+u:([_~docUpdate] * [_~docUpdate]* [_~docUpdate])
+리비전을 이미 완료하셨는데 이전으로 되돌리고 싶으신가요?\n
+type:1 btnnum:0 attachflag:0 fileName:17.png\n
+
+u:([_~cowork] * [_~cowork]* [~cowork])
+수정한 문서를 업무 관련자가 꼭 읽었으면 하시는 건가요?\n
+type:1 btnnum:0 attachflag:0 fileName:19.png 19-1.png\n
+
+u:([revised "checked in"] * [revert])
+Do you want to know how to revert your document after revision/check-in?\n
+type:1 btnnum:0 attachflag:0 fileName:17.png\n
+
+u: ([_~copyCase]*[_~copyCase] _0!=_1)  
+문서의 새로운 브랜치 를 만들고 싶으신가요?\n
+type:1 btnnum:0 attachflag:0 fileName:11.png\n
+
+u: ([_~prevCase]*[_~prevCase] _0!=_1)
+이전 버전의 문서를 확인하고 싶으신 가요?\n
+type:1 btnnum:0 attachflag:0 fileName:16.png\n
+ 
+u: ([_~whoUseCase] * [_~whoUseCase]  * [_~whoUseCase])
+누가 문서를 사용했는지 알고 싶으신가요?\n
+type:1 btnnum:0 attachflag:0 fileName:15.png\n
+
+u: ([채팅기능 채팅])
+문서별 채팅기능을 알고싶으세요?\n
+type:1 btnnum:0 attachflag:0 fileName:23.png\n
+
+u: (["웹 프리뷰"] )
+웹 프리뷰에 대해서 알고 싶으신가요?\n
+type:1 btnnum:0 attachflag:0 fileName:22.png \n
+
+u: ([_~smartCleaner] )
+스마트 클리너에 대해서 알고 싶으세요??\n
+type:1 btnnum:0 attachflag:0 fileName:21.png\n
+
+u: ([_~timeline] )
+문서의 "타임라인"을 확인하고 싶으신가요?\n
+type:1 btnnum:0 attachflag:0 fileName:24.png\n
+
+u: (~time_words)
+현재 시간은 : ^join(%month 월) ^join(%date 일) ^join(%hour 시) ^join(%minute 분) 입니다.\n
+type:6 btnnum:2 attachflag:0 imagenumber:00.jpg\n
+
+u:("안녕하세요")
+네 반갑습니다!
+
+u: ("회의실")
+회의실 예약을 하시려면 아래 버튼을 누르시면 해당 웹 사이트로 이동됩니다.\n
+회의실 예약 링크((button/https://sso.fasoo.com/adfs/ls?version=1.0&action=signin&realm=urn%3AAppProxy%3Acom&appRealm=fc65b398-3241-e811-80f3-00155d65fe02&returnUrl=https%3A%2F%2Fluke30.fasoo.com%2F&client-request-id=E7D0B070-396C-0001-A167-D1E76C39D501))\n
+type:5 btnnum:0 attachflag:0 fileName:00\n
+
+#Terms part.
+
+u: (["태그" "테그"])
+태그란 Wrapsody에서 가져가는 문서분류 체계로 태그 유형에 따라 필수, 선택, 사용자 태그로 분류된다. 태그의 속성에 따라 다중선택, 계층 구조를 만들 수 있다.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ([Branch branch])
+B1\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ([[useage Useage][map Map] "유스에이지" ["유스에이지"]["맵"]])
+B2\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u:([Wrapsody wrapsody][bridge Bridge])
+B3\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ([revision revise Revision Revise])
+B4\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ([Branch branch][map Map])
+B5\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (["문서"]*["관리자"])
+문서 관리자란 Wrapsody 문서의 사용 권한(열람 및 리비전)을 부여할 수 있는 사용자. 최초로 Wrapsody 문서를 생성한 사용자가 해당 Wrapsody 문서의 문서 관리자가 되며 차후 변경 가능. 문서 관리자가 아닌 사용자가 문서 관리자 승계를 요청하고 문서 관리자가 승인하면 해당 문서의 문서 관리자가 됨\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ([[wrapping "랩핑" "렙핑" "랩" ]["해제"] "해제"] )
+Wrapping 해제란 Wrapsody 문서를 Wrapping되기 전 상태로 다시 되돌리는 과정이다.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (["열람"]["요청"])
+열람 요청이란 문서를 리비전 하면서 권한을 보유하고 있는 다른 사용자에게 문서의 열람을 요청하는 기능.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ("열람")
+열람이란 해당 권한이 있는 사용자만 Wrapsody 문서 열람 가능. 열람 권한만 있는 사용자가 문서를 열거나 리비전 권한이 있는 사용자가 문서를 열 때 열람 모드를 선택하면 문서는 열람 전용 모드로 열림.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (["참여" "참석"] ["유도" "요청"])
+참여 유도란 리비전 된 시점을 기준으로 전사 임직원이 문서관리자인 문서를 문서 공유자들이 서버에 설정된 기간 (예. 3일) 내에 열람한 횟수의 합계. 참여유도 회수가 높으면 문서관리자가 만든 문서의 사용빈도가 높다는 것이다. 이 지수는 만들어진 문서의 활용도를 유추할 수 있다\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: ("참여")
+참여란 문서가 리비전 된 시점을 기준으로 서버에 설정된 기간 (예. 3일) 내에 전사 임직원이 열람한 횟수의 합계. 참여 회수가 높으면 권한사용자가 문서의 활용도가 높다는 것이다. 이 지수는 문서의 공유가 적절한 사용자에게 부여되고 있다고 유추할 수 있다.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (["내" "나 의" "나"]["드라이브" "저장소"])
+내 드라이브란 Wrapsody 문서를 편리하게 분류하고 효율적으로 관리할 수 있는 Wrapsody서버 상의 가상 폴더 체계이다. 트리 구조로 생성 가능하며, 동일 문서를 여러 개의 폴더에 중복으로 보관할 수 있다.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (타임라인)
+타임라인이란 특정 Wrapsody문서의 버전별 이벤트를 연대기 형식으로 조회할 수 있다.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (["리" "리비전" "리비전"])
+리비전이란 리비전 권한이 있는 사용자가 Wrapsody 문서의 내용을 수정하여 서버에 저장하는 과정. 사용자는 문서를 열 때 리비전 시작을 선택한 다음 문서 내용을 수정해야 하며, 수정한 후에는 리비전을 완료해야만 수정된 파일이 최신 버전으로 등록됨.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+
+u: (["용어사전" "용어" "도움" "도움말" "사전"])
+아래에 있는 단어들 중 궁금한 단어가 있으시면 클릭해 주세요\n
+리비전((button/command))\n
+태그((button/command))\n
+내 드라이브 ((button/command))\n
+열람((button/command))\n
+열람 요청((button/command))\n
+참여 유도((button/command))\n
+참여((button/command))\n
+Useage map((button/command))\n
+Wrapping 해제((button/command))\n
+문서 관리자((button/command))\n
+문서 공유 링크((button/command))\n
+Branch map((button/command))\n
+Wrapsody Bridge((button/command))\n
+타임라인((button/command))\n
+type:5 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+#Pre_set menu showup. 
+u: ("문서")
+아래는 문서와 연관된 질문들 입니다. 해당하시는 질문을 클릭 해주세요.\n
+누가 내 문서를 사용했는지 알고 싶어요.((button/command))\n
+열람 권한은 어떻게 요청할 수 있나요?((button/command))\n
+문서를 이미 리비전 완료했는데 이전으로 되돌리고 싶어요.((button/command))\n
+Wrapsody 문서는 어떻게 공유할 수 있나요?((button/command))\n
+다른 사용자가 관리중인 문서의 내용을 복사해서 내 문서로 만들고 싶어요((button/command))\n
+type:5 btnnum:2 attachflag:0 imagenumber:00.jpg\n
+
+
+
+u: (B1)
+Branch란 기존 Wrapsody 문서에서 파생되어 별도의 리비전 이력을 갖게 되는 Wrapsody 문서.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (B2)
+Usage Map이란 각 Wrapsody 문서의 부서별, 사용자 별 사용 현황을 보여주는 Map. 부서별, 사용자 별 사용량 그래프도 조회할 수 있다.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (B3)
+Wrapsody Bridge란 표준 오피스 프로그램뿐만 아니라 모든 프로그램을 지원하기 위한 Wrapsody 기능. 오피스 유형 이외의 Wrapsody문서를 리비전 할 때 사용한다.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (B4)
+리비전이란 리비전 권한이 있는 사용자가 Wrapsody 문서의 내용을 수정하여 서버에 저장하는 과정. 사용자는 문서를 열 때 리비전 시작을 선택한 다음 문서 내용을 수정해야 하며, 수정한 후에는 리비전을 완료해야만 수정된 파일이 최신 버전으로 등록됨.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+u: (B5)
+Branch Map이란 하나의 Wrapsody 문서가 생성된 이후, 해당 문서에서 파생된 모든 Branch 문서간의 연관 관계를 보여주는 Map.\n
+type:6 btnum:0 attachflag:0 imagenumber:00.jpg\n
+
+
+#Title Concept 
+concept: ~wrapsodyKeywords ( ~time_words ~branch_words ~whoUseCase ~prevCase ~copyCase ~docUpdate ~cowork ~permissionConcept ~shareCase ~commentCase ~newFormat ~smartCleaner ~documentChat ~webPreview ~timeline   )
+
+#인사말 전용 concept
+concept: ~greeting_words ( null null2 nul nul2 Q1 Q2 Q2_kr)
+
+#Concept Dic
+concept: ~time_words ("시간" "시" "몇")
+concept: ~branch_words (branch "브랜치" "브렌치" "브랜 치" "브렌 치" "복사" "카피" )
+
+concept: ~permission_words ("권한요청" "권한" "허가" "허락" "승인")
+concept: ~share_words ("공유")
+concept: ~comment_words ("의견" "댓글" "코멘트" "코맨트")
+
+concept: ~whoUseCase ("문서" "파일" "누가" "사람" "사용" "변경" "업데이트" "열람" "확인")
+concept: ~prevCase ("이전" "버전" "옛날" "처음" "열람" "확인" "버전" "보")  
+concept: ~copyCase ("문서" "파일"  "브랜치" "복사" "카피" )   
+concept: ~docUpdate("리" "비전" "비전을" "파일" "리비전" "리 비전" "수정" "되돌리고" "되돌리다" "되돌리고싶어요" "이 전" "복구")
+concept: ~cowork( "관련자 매니저" "업무 관련자" "동료" "팀 메이트" "팀 원" "내용" "수정한" "읽었으면" "체크" "문서" "내용" "파일" "확인" "봤으면" "보았으면")
+concept: ~permissionConcept( "권한" "요청" "얻" "부여")
+concept: ~shareCase ("문서" "파일" "공유")
+concept: ~commentCase ("문서" "의견" "코멘트" "댓글" "남기")
+
+#New Feature
+concept: ~smartCleaner ( “스마트 클리너” "스마트클리너" "스마트" "클리너")
+concept: ~documentChat ( "채팅" "대화"  )
+concept: ~webPreview( "웹프리뷰" “웹 프리뷰” )
+concept: ~timeline ("타임 라인" "히스토리" "기록")
+
+concept: ~wrapsodyKeywords_en (~whoUseCase_en  ~prevCase_en  ~copyCase_en ~docUpdate_en ~cowork_en ~permissionConcept_en ~shareCase_en ~commentCase_en ~newFormat_en )
+
+#Concept Dic
+concept: ~whoUseCase_en (use used revise revised open oepned see saw watch watched update updated work worked document)
+concept: ~prevCase_en ( previous prior earlier older different past before revision document version view)
+concept: ~copyCase_en (duplicate copy branch document duplicated copy)
+concept: ~docUpdate_en(revert change reverted changed "set back" "go back" document revision)
+concept: ~cowork_en( colleague coworker co-worker manager senior teammate check checked see saw read )
+concept: ~permissionConcept_en( request get ask document permission document)
+concept: ~shareCase_en (share link download document shared)
+concept: ~commentCase_en (post comment document)
+concept: ~coworker( colleague colleagues coworker coworkers co-worker co-workers manager managers senior seniors teammate teammates)
+
+#New Feature
+concept: ~smartCleaner_en [ smart cleaner “smart cleaner” sc  delete clean smartcleaner]
+concept: ~documentChat_en ( chat talk conversation chatting  )
+concept: ~webPreview_en( web preview “web preview” “webpreview”  wp peek )
+concept: ~timeline_en (timeline history)
