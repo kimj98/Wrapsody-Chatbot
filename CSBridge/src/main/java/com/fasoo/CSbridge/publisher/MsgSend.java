@@ -23,8 +23,7 @@ import java.util.concurrent.TimeoutException;
  */
 public class MsgSend {
 
-    private static final String Q_NAME = "bot-chatscript";
-    private static final String R_Key = "#.user.@BOT@chatscript";
+
     private static  String conversationId = "";
 
     /**
@@ -38,25 +37,21 @@ public class MsgSend {
         //setting
         ConnectionFactory factory = new ConnectionFactory();
 
-        fileReader textread = new fileReader();
-        String[] saveLine = textread.readfiles();
-        //connect with the rabbitMQ
-        //attempt recovery every 5 sec
         factory.setNetworkRecoveryInterval(1000);
-        factory.setHost(saveLine[0]);
-        factory.setPort(Integer.parseInt(saveLine[1]));
-        factory.setVirtualHost(saveLine[2]);
-        factory.setUsername(saveLine[3]);
-        factory.setPassword(saveLine[4]);
+        factory.setHost(constant.Host);
+        factory.setPort(constant.Port);
+        factory.setVirtualHost(constant.VirtualHost);
+        factory.setUsername(constant.Username);
+        factory.setPassword(constant.Password);
         factory.setAutomaticRecoveryEnabled(true);
 
         Connection connection = factory.newConnection();
         final Channel channel = connection.createChannel();
 
-        // Queue-> bot-ChatScript 이름의 큐 생성.
-        channel.queueDeclare(Q_NAME,true,false,false,null);
+        // Queue-> bot-ChatScript 이름의 큐 생성. ( 없을 경우만 )
+        channel.queueDeclare(constant.QueueName,true,false,false,null);
 
-        channel.queueBind(Q_NAME,"user",R_Key); /*   Exchange -> user 는 이미 있으니 생성 할 필요x
+        channel.queueBind(constant.QueueName,"user",constant.MSRoutingkey); /*   Exchange -> user 는 이미 있으니 생성 할 필요x
                                                             그러니 queue binding 만 하면 된다.
                                                             Routing Key 는 위에 정의됨
                                                        */
@@ -64,7 +59,7 @@ public class MsgSend {
 
         //Build msg Properties.
         Map messageProps = new HashMap();
-        messageProps.put("__TypeId__","com.wrapsody.messaging.model.Message");
+        messageProps.put("__TypeId__",constant.MSProperty);
 
         //Set message Basic properties. ( 이건 event 상관없이 same setting)
         AMQP.BasicProperties.Builder basicProperties = new AMQP.BasicProperties.Builder();

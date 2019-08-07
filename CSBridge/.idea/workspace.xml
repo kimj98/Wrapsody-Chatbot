@@ -2,38 +2,26 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="550153eb-52fd-40f0-9b8c-841317c2b65a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/chatscript_en.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/commentReader.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/LeftMenuSend.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fasoo/CSbridge/helper/PosFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fasoo/CSbridge/helper/chatscript.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fasoo/CSbridge/helper/createJSON.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fasoo/CSbridge/helper/fileReader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/com/fasoo/CSbridge/publisher/MsgSend.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/CheckType.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/MsgCatch.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/attachJSON.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/CheckType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MsgCatch$1.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MsgCatch.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/MsgSend.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/PosFilter.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/attachJSON.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chatscript.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/createJSON.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/fileReader.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/TESTBOT/WrapsodyUserGuide.top" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/TESTBOT/generalGuidance.top" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/TESTBOT/introductions.top" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/TESTBOT/keywordless.top" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/TESTBOT/meetingRoomReserve.top" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/TESTBOT/questionList.top" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/TESTBOT/simplecontrol.top" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/TESTBOT/simpletest.top" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/TESTBOT/testConcept.top" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/TESTBOT/testdic1.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../RAWDATA/filesTestBot.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/commentReader.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/commentReader.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/LeftMenuSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/LeftMenuSend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/MsgSend.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/MsgSend.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/receiver/MsgCatch.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/receiver/MsgCatch.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/bridgeClient.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/PosFilter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/PosFilter.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/attachJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/attachJSON.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/chatscript.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/chatscript.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/chatscript_en.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/chatscript_en.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/checkType.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/checkType.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/commentReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/commentReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/createJSON.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/createJSON.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/fileReader.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/helper/fileReader.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/publisher/LeftMenuSend.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/publisher/LeftMenuSend.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/publisher/MsgSend.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/publisher/MsgSend.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/receiver/MsgCatch$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/receiver/MsgCatch$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/receiver/MsgCatch.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/fasoo/CSbridge/receiver/MsgCatch.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/classes/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,8 +39,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/checkType.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+            <state relative-caret-position="306">
+              <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/attachJSON.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1428">
+              <caret line="102" column="104" selection-start-line="102" selection-start-column="3" selection-end-line="102" selection-end-column="104" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -63,8 +63,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/receiver/MsgCatch.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="683">
-              <caret line="333" column="66" selection-start-line="333" selection-start-column="59" selection-end-line="333" selection-end-column="66" />
+            <state relative-caret-position="198">
+              <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -73,12 +73,20 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/constant.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="23" column="88" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/LeftMenuSend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-923">
-              <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+            <state relative-caret-position="1258">
+              <caret line="83" selection-start-line="83" selection-end-line="83" />
               <folding>
-                <element signature="e#0#4298#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -88,22 +96,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/MsgSend.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="187">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#3234#3235#0" expanded="true" />
-                <element signature="e#3296#3297#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/attachJSON.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-34">
-              <caret line="102" column="104" selection-start-line="102" selection-start-column="3" selection-end-line="102" selection-end-column="104" />
+            <state relative-caret-position="-39">
+              <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -114,11 +108,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/createJSON.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="493">
-              <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-              <folding>
-                <element signature="e#0#1305#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="111">
+              <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -126,20 +117,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/fileReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="187">
               <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/PosFilter.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="14" column="37" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -150,23 +129,9 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/commentReader.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-945">
-              <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+            <state relative-caret-position="850">
+              <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
               <folding>
-                <element signature="e#0#4860#0" expanded="true" />
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/chatscript.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="738">
-              <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
-              <folding>
-                <element signature="e#0#3920#0" expanded="true" />
                 <element signature="imports" expanded="true" />
               </folding>
             </state>
@@ -184,7 +149,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>put</find>
       <find>routing</find>
       <find>user Locale</find>
       <find>buttonTxt</find>
@@ -214,6 +178,7 @@
       <find>csAns</find>
       <find>temp</find>
       <find>command</find>
+      <find>userReport</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -238,18 +203,19 @@
         <option value="$PROJECT_DIR$/src/com/fasoo/CSbridge/helper/PosFilter.java" />
         <option value="$PROJECT_DIR$/src/com/fasoo/CSbridge/publisher/MsgSend.java" />
         <option value="$PROJECT_DIR$/src/com/fasoo/CSbridge/receiver/MsgCatch.java" />
-        <option value="$PROJECT_DIR$/../../../CSBProject - 복사본/CS_Bridge/CSBridge/src/main/java/MsgCatch.java" />
+        <option value="$USER_HOME$/CSBProject - 복사본/CS_Bridge/CSBridge/src/main/java/MsgCatch.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/attachJSON.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/chatscript_en.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/fileReader.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/receiver/MsgCatch.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/LeftMenuSend.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/MsgSend.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/createJSON.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/PosFilter.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/commentReader.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/chatscript.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/checkType.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/commentReader.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/LeftMenuSend.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/MsgSend.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/receiver/MsgCatch.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/constant.java" />
       </list>
     </option>
   </component>
@@ -271,6 +237,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -413,15 +380,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$/pom.xml" />
-    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
@@ -483,8 +449,9 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="762" y="0" width="781" height="830" extended-state="0" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.55324674" visible="true" weight="0.38696256" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.55324674" weight="0.1671141" />
       <window_info id="Structure" order="1" sideWeight="0.44675323" side_tool="true" weight="0.18389262" />
       <window_info id="Image Layers" order="2" />
       <window_info id="Designer" order="3" />
@@ -494,7 +461,35 @@
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="TODO" order="2" weight="0.32907802" />
-      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49731544" visible="true" weight="0.08608321" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49731544" weight="0.4539007" />
+      <window_info anchor="bottom" id="Debug" order="4" weight="0.21134752" />
+      <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Terminal" order="7" weight="0.53333336" />
+      <window_info anchor="bottom" id="Event Log" order="8" sideWeight="0.5026846" side_tool="true" weight="0.28936172" />
+      <window_info anchor="bottom" id="Version Control" order="9" weight="0.32907802" />
+      <window_info anchor="bottom" id="Messages" order="10" sideWeight="0.4986577" weight="0.39858156" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.24966443" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Theme Preview" order="5" />
+      <window_info anchor="right" id="Capture Analysis" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.55324674" weight="0.1671141" />
+      <window_info id="Structure" order="1" sideWeight="0.44675323" side_tool="true" weight="0.18389262" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="UI Designer" order="4" />
+      <window_info id="Capture Tool" order="5" />
+      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="TODO" order="2" weight="0.32907802" />
+      <window_info anchor="bottom" id="Run" order="3" sideWeight="0.49731544" visible="true" weight="0.10638298" />
       <window_info anchor="bottom" id="Debug" order="4" weight="0.21134752" />
       <window_info anchor="bottom" id="Cvs" order="5" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="6" weight="0.4" />
@@ -510,34 +505,6 @@
       <window_info anchor="right" id="Theme Preview" order="5" />
       <window_info anchor="right" id="Capture Analysis" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
-    </layout>
-    <layout-to-restore>
-      <window_info id="Image Layers" order="0" />
-      <window_info id="Designer" order="1" />
-      <window_info id="UI Designer" order="2" />
-      <window_info id="Capture Tool" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info content_ui="combo" id="Project" order="5" visible="true" weight="0.24966443" />
-      <window_info id="Structure" order="6" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" order="0" />
-      <window_info anchor="bottom" id="Terminal" order="1" weight="0.32907802" />
-      <window_info anchor="bottom" id="Event Log" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="3" weight="0.32907802" />
-      <window_info anchor="bottom" id="Message" order="4" />
-      <window_info anchor="bottom" id="Find" order="5" />
-      <window_info active="true" anchor="bottom" id="Run" order="6" visible="true" weight="0.3035461" />
-      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="10" />
-      <window_info anchor="right" id="Palette" order="0" />
-      <window_info anchor="right" id="Capture Analysis" order="1" />
-      <window_info anchor="right" id="Theme Preview" order="2" />
-      <window_info anchor="right" id="Palette&#9;" order="3" />
-      <window_info anchor="right" id="Maven" order="4" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="5" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="6" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="7" weight="0.25" />
     </layout-to-restore>
   </component>
   <component name="editorHistoryManager">
@@ -556,16 +523,7 @@
     <entry file="file://$PROJECT_DIR$/src/com/fasoo/CSbridge/helper/PosFilter.java" />
     <entry file="file://$PROJECT_DIR$/src/com/fasoo/CSbridge/receiver/MsgCatch.java" />
     <entry file="file://$PROJECT_DIR$/src/com/fasoo/CSbridge/publisher/MsgSend.java" />
-    <entry file="file://$PROJECT_DIR$/../../../CSBProject - 복사본/CS_Bridge/CSBridge/src/main/java/MsgCatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="92" lean-forward="true" selection-end-line="225" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/CSBProject - 복사본/CS_Bridge/CSBridge/src/main/java/MsgCatch.java" />
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="280">
@@ -700,31 +658,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/chatscript.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="738">
+        <state relative-caret-position="613">
           <caret line="70" column="41" selection-start-line="70" selection-start-column="41" selection-end-line="70" selection-end-column="41" />
-          <folding>
-            <element signature="e#0#3920#0" expanded="true" />
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/MsgSend.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#3234#3235#0" expanded="true" />
-            <element signature="e#3296#3297#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/checkType.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="30" column="36" lean-forward="true" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -733,38 +668,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/attachJSON.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-34">
+        <state relative-caret-position="1428">
           <caret line="102" column="104" selection-start-line="102" selection-start-column="3" selection-end-line="102" selection-end-column="104" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/receiver/MsgCatch.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="683">
-          <caret line="333" column="66" selection-start-line="333" selection-start-column="59" selection-end-line="333" selection-end-column="66" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/createJSON.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="40" lean-forward="true" selection-start-line="40" selection-end-line="40" />
-          <folding>
-            <element signature="e#0#1305#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/fileReader.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
-          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -773,10 +678,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/commentReader.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-945">
-          <caret line="29" column="3" lean-forward="true" selection-start-line="29" selection-start-column="3" selection-end-line="29" selection-end-column="3" />
+        <state relative-caret-position="850">
+          <caret line="66" column="41" selection-start-line="66" selection-start-column="41" selection-end-line="66" selection-end-column="41" />
           <folding>
-            <element signature="e#0#4860#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
         </state>
@@ -784,12 +688,65 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/LeftMenuSend.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-923">
-          <caret line="25" column="3" lean-forward="true" selection-start-line="25" selection-start-column="3" selection-end-line="25" selection-end-column="3" />
+        <state relative-caret-position="1258">
+          <caret line="83" selection-start-line="83" selection-end-line="83" />
           <folding>
-            <element signature="e#0#4298#0" expanded="true" />
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/publisher/MsgSend.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-39">
+          <caret line="50" column="54" selection-start-line="50" selection-start-column="54" selection-end-line="50" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/checkType.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="30" column="36" selection-start-line="30" selection-start-column="36" selection-end-line="30" selection-end-column="36" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/fileReader.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="26" column="53" selection-start-line="26" selection-start-column="53" selection-end-line="26" selection-end-column="53" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/createJSON.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="111">
+          <caret line="14" column="13" selection-start-line="14" selection-start-column="13" selection-end-line="14" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/receiver/MsgCatch.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="198">
+          <caret line="82" column="47" selection-start-line="82" selection-start-column="47" selection-end-line="82" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/fasoo/CSbridge/helper/constant.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="88" selection-start-line="23" selection-start-column="88" selection-end-line="23" selection-end-column="88" />
         </state>
       </provider>
     </entry>
@@ -843,6 +800,7 @@
       </state>
       <state key="ModuleStructureConfigurable.UI">
         <settings>
+          <last-edited>bridgeClient</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>
@@ -854,6 +812,7 @@
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
         <settings>
+          <last-edited>Maven: com.fasterxml.jackson.core:jackson-core:2.9.9</last-edited>
           <splitter-proportions>
             <option name="proportions">
               <list>

@@ -38,14 +38,12 @@ public class LeftMenuSend {
         //setting
         ConnectionFactory factory = new ConnectionFactory();
 
-        fileReader textread = new fileReader();
-        String[] saveLine = textread.readfiles();
         factory.setNetworkRecoveryInterval(1000);
-        factory.setHost(saveLine[0]);
-        factory.setPort(Integer.parseInt(saveLine[1]));
-        factory.setVirtualHost(saveLine[2]);
-        factory.setUsername(saveLine[3]);
-        factory.setPassword(saveLine[4]);
+        factory.setHost(constant.Host);
+        factory.setPort(constant.Port);
+        factory.setVirtualHost(constant.VirtualHost);
+        factory.setUsername(constant.Username);
+        factory.setPassword(constant.Password);
         factory.setAutomaticRecoveryEnabled(true);
 
         Connection connection = factory.newConnection();
@@ -54,7 +52,7 @@ public class LeftMenuSend {
 
         //Build msg Properties.
         Map messageProps = new HashMap();
-        messageProps.put("__TypeId__","com.wrapsody.messaging.model.ApiResponse");
+        messageProps.put("__TypeId__",constant.LMenuPropoerty);
 
         AMQP.BasicProperties.Builder basicProperties = new AMQP.BasicProperties.Builder();
         basicProperties.priority(0).deliveryMode(2).replyTo(properties.getReplyTo())
@@ -75,26 +73,22 @@ public class LeftMenuSend {
     public static void pubMail(String text)throws IOException, TimeoutException {
         //setting
         ConnectionFactory factory = new ConnectionFactory();
-
-        fileReader textread = new fileReader();
-        String[] saveLine = textread.readfiles();
         factory.setNetworkRecoveryInterval(1000);
-        factory.setHost(saveLine[0]);
-        factory.setPort(Integer.parseInt(saveLine[1]));
-        factory.setVirtualHost(saveLine[2]);
-        factory.setUsername(saveLine[3]);
-        factory.setPassword(saveLine[4]);
+        factory.setHost(constant.Host);
+        factory.setPort(constant.Port);
+        factory.setVirtualHost(constant.VirtualHost);
+        factory.setUsername(constant.Username);
+        factory.setPassword(constant.Password);
         factory.setAutomaticRecoveryEnabled(true);
-
         Connection connection = factory.newConnection();
+
         final Channel channel = connection.createChannel();
         byte[] messageBodyBytes = text.getBytes();
 
         //Build msg Properties.
         Map messageProps = new HashMap();
-        String routing_key = "api.admin.mail.send";
-        //channel.queueBind("request","request",routing_key);
-        messageProps.put("__TypeId__","com.wrapsody.messaging.model.ApiRequest");
+
+        messageProps.put("__TypeId__",constant.MailProperty);
 
 
         AMQP.BasicProperties.Builder basicProperties = new AMQP.BasicProperties.Builder();
@@ -103,7 +97,7 @@ public class LeftMenuSend {
                 .contentEncoding("UTF-8")
                 .contentType("application/json").build();
 
-        channel.basicPublish("request",routing_key,basicProperties.build(),messageBodyBytes);
+        channel.basicPublish("request",constant.MailRoutingKey,basicProperties.build(),messageBodyBytes);
 
     }
 

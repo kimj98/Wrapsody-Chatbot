@@ -40,11 +40,11 @@ public class commentReader {
      */
     public void readfiles(JSONObject j) {
         try {
-            BufferedReader reader = new BufferedReader(new FileReader("../CSBridge/WrapsodyUserGuide.top"));
+            BufferedReader reader = new BufferedReader(new FileReader(constant.KrFile));
 
             if (j.get("locale").toString().equals("en_US") ||j.get("locale").toString().equals("en-US")) {
                 reader = new BufferedReader(new FileReader(
-                        "../CSBridge/WrapsodyUserGuide_en.top"));
+                        constant.EnFile));
             }
 
             String line = reader.readLine();

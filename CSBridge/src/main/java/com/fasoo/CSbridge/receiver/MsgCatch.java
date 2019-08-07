@@ -36,11 +36,9 @@ import com.fasoo.CSbridge.publisher.LeftMenuSend;
 import com.fasoo.CSbridge.publisher.MsgSend;
 import com.rabbitmq.client.*;
 
-import javafx.geometry.Pos;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
 import org.json.simple.parser.ParseException;
-import org.omg.PortableServer.POA;
 
 import java.io.IOException;
 
@@ -55,10 +53,9 @@ import static com.sun.javafx.util.Utils.split;
  */
 public class MsgCatch {
 
-    private static final String Q_NAME = "bot-chatscript";
-    private static final String R_Key = "#.user.@BOT@chatscript";
-
+    /**Store the user's ID and Locale info*/
     public static HashMap<String,String> userLocale = new HashMap<String, String>();
+    /**Store the user's ID and question*/
     public static HashMap<String,String> userReport = new HashMap<String, String>();
 
     /**
@@ -72,25 +69,25 @@ public class MsgCatch {
     public static void main(String[] args) throws IOException, TimeoutException{
         //settings for connecting with RabbitmQ
         ConnectionFactory factory = new ConnectionFactory();
-        fileReader textread = new fileReader();
-        String[] saveLine = textread.readfiles();
+//        fileReader textread = new fileReader();
+//        String[] saveLine = textread.readfiles();
         factory.setNetworkRecoveryInterval(1000);
-        factory.setHost(saveLine[0]);
-        factory.setPort(Integer.parseInt(saveLine[1]));
-        factory.setVirtualHost(saveLine[2]);
-        factory.setUsername(saveLine[3]);
-        factory.setPassword(saveLine[4]);
+        factory.setHost(constant.Host);
+        factory.setPort(constant.Port);
+        factory.setVirtualHost(constant.VirtualHost);
+        factory.setUsername(constant.Username);
+        factory.setPassword(constant.Password);
         factory.setAutomaticRecoveryEnabled(true);
 
         //generate channel & declare queue & bind queue with the exchange.
         final Connection connection2 = factory.newConnection();
         final Channel channel2 = connection2.createChannel();
-        channel2.queueDeclare(Q_NAME,true,false,false,null);
-        channel2.queueBind(Q_NAME,"user",R_Key);
+        channel2.queueDeclare(constant.QueueName,true,false,false,null);
+        channel2.queueBind(constant.QueueName,"user",constant.MSRoutingkey);
 
         //RECEIVING Process.
         boolean autoAck =false;
-        channel2.basicConsume(Q_NAME, autoAck, "myConsummerTag",
+        channel2.basicConsume(constant.QueueName, autoAck, "myConsummerTag",
                 new DefaultConsumer(channel2) {
                     @Override
                     public void handleDelivery(String consumerTag,
