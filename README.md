@@ -2,8 +2,9 @@
 
 KR/ENG Ver. ChatScript file is here : [ChatScript KR/ENG Version with Wrapsody](https://taehoonHoodyKim@bitbucket.org/taehoonHoodyKim/csbridge.git)  
   
- The main purpose of this project is making connection between Chatscript Server with  
- Rabbitmq messaging server.  
+ The main purpose of this project is making connection between Chatscript Server with Rabbitmq messaging server. 
+ Use the Chatscript : [ChatScript](https://github.com/ChatScript/ChatScript)  
+   
  Based on the Maven project.
  * DependencyList
      - Korean POS-Tagger : [open-korean-text](https://github.com/open-korean-text/open-korean-text)  
