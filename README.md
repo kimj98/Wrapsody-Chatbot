@@ -68,7 +68,7 @@ type: 7 reportNum: 0 attachFlag: 0 fileName: 00.jpg\n
  ```
  
  Burger, Pizza, and Noodle shows the list of their menus.  
- These three concepts are the part of the food concept.
+ These three concepts are the part of the food concept.  
  Therefore, the above script will print out "I love that too" when user input the "pasta"
  
  
