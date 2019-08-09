@@ -11,9 +11,13 @@ KR/ENG Ver. ChatScript file is here : [ChatScript KR/ENG Version with Wrapsody](
 4. Get a response from ChatScript Server and modify it by the rule.
 5. Send back to the Rabbitmq Server.
 
+# Features
+* Use Korean POS-Tagger : [open-korean-text](https://github.com/open-korean-text/open-korean-text)  
 
 
 # Script Rule Guide
+The name of the file in this project is "WrapsodyUserGuide.top" 
+  
 Here is the simple example of the Script.
 ```
 u: (hello)  
@@ -47,5 +51,24 @@ type: 7 reportNum: 0 attachFlag: 0 fileName: 00.jpg\n
   - When attach more than one files, seperate them by the white space ' '
   - Just enter dummy file name when the typeNum is 5, 6, or 7
  ```
+ 
+ # Writing Concept
+ Concept is the group of the words  
+ example)  
+ ```
+ concept: ~food ( ~burger ~pizza ~noodle )
+ concept: ~burger ( bigMac "cheese burger" McDouble)
+ concept: ~pizza ( "Meat Lovers pizza" "Peperoni pizza")
+ concept: ~noodle ( pho pasta ramen )
+ ```
+ ```
+ u:(~food)
+ I love that too
+ 
+ ```
+ 
+ Burger, Pizza, and Noodle shows the list of their menus.
+ In case of food concept has those three food concepts.
+ Therefore, the above script will printed out if user input is "Meat Lovers pizza".
  
  
