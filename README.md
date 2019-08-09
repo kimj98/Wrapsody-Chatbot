@@ -1,6 +1,15 @@
 # CS_Bridge
 
-KR/ENG Ver. ChatScript file is here : [ChatScript KR/ENG Version with Wrapsody](https://taehoonHoodyKim@bitbucket.org/taehoonHoodyKim/csbridge.git)
+KR/ENG Ver. ChatScript file is here : [ChatScript KR/ENG Version with Wrapsody](https://taehoonHoodyKim@bitbucket.org/taehoonHoodyKim/csbridge.git)  
+  
+ The main purpose of this project is making connection between Chatscript Server with  
+ Rabbitmq messaging server.  
+ Based on the Maven project.
+ * DependencyList
+     - Korean POS-Tagger : [open-korean-text](https://github.com/open-korean-text/open-korean-text)  
+     - Rabbitmq          : [rabbitmq   - mvn repo](https://mvnrepository.com/artifact/com.rabbitmq/amqp-client)
+     - Jackson           : [Jackson    - mvn repo](https://mvnrepository.com/artifact/com.fasterxml.jackson.core/jackson-core)
+     - Json-Simple       : [JSONSimple - mvn repo](https://mvnrepository.com/artifact/com.googlecode.json-simple/json-simple) 
 
 
 
@@ -10,9 +19,7 @@ KR/ENG Ver. ChatScript file is here : [ChatScript KR/ENG Version with Wrapsody](
 3. Bring user's input into the ChatScript Server.
 4. Get a response from ChatScript Server and modify it by the rule.
 5. Send back to the Rabbitmq Server.
-
-# Features
-* Use Korean POS-Tagger : [open-korean-text](https://github.com/open-korean-text/open-korean-text)  
+ 
 
 
 # Script Rule Guide
