@@ -71,4 +71,6 @@ type: 7 reportNum: 0 attachFlag: 0 fileName: 00.jpg\n
  These three concepts are the part of the food concept.  
  Therefore, the above script will print out "I love that too" when user input the "pasta"
  
+ # Flow
+ ![Flow img](./CSBridge/ChatBotFlow.jpg)
  
