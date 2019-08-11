@@ -27,7 +27,7 @@
 //             Read the list of the menus and commands from the topic file                   //
 //             based on user's "Locale"                                                      //
 ///////////////////////////////////////////////////////////////////////////////////////////////
-
+//
 
 package com.fasoo.CSbridge.receiver;
 
@@ -312,7 +312,7 @@ public class MsgCatch {
                                 catalogs.add("Notice");
 
                                 ArrayList<String> catalogs_KR = new ArrayList<String>();
-                                catalogs_KR.add("기능 사용법");
+                                catalogs_KR.add("주요기능 사용법");
                                 catalogs_KR.add("신규 및 주요 기능");
                                 catalogs_KR.add("공지 사항");
 
